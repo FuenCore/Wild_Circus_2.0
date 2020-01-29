@@ -34,7 +34,6 @@ const ArtistPage = () => {
 					<option value="goldfish">Exemple </option>
 				</select>
 			</div>
-			<div className="ArtistPage_perso" />
 		</div>
 	);
 };

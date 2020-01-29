@@ -8,6 +8,14 @@ const PlacePage = () => {
             <div className="PlacePage_container_aside">
                 <div className="PlacePage_aside_list">
                     Events list
+                    <ul className="PlacePage_ul">
+                        <li className="PlacePage_li">Exemple 1</li>
+                        <li className="PlacePage_li">Exemple 2</li>
+                        <li className="PlacePage_li">Exemple 3</li>
+                        <li className="PlacePage_li">Exemple 4</li>
+                        <li className="PlacePage_li">Exemple 5</li>
+
+                    </ul>
                 </div>
                 <div className="PlacePage_aside_location">
                     <div className="PlacePage_aside_location_container">

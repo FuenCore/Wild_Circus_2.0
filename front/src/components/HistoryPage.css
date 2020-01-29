@@ -44,7 +44,7 @@
 .HistoryPage_aside_right {
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    height: 98vh;
     background-color: red;
     padding : 0;
     width: 400Px;

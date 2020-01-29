@@ -5,6 +5,8 @@
 }
 
 .NavBar_ul {
+    position: static;
+    width: 100%;
     display: flex;
     list-style: none;
     flex-direction: row;

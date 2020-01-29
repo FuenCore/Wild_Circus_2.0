@@ -8,16 +8,35 @@
     height: 100vh;
 }
 
-.ArtistPage_perso {
-    width: 80vw;
-    height: 40vh;
-    border: 2px solid var(--black);
-    margin: 40vh auto;
-    border-radius: 10px;
-}
-
 .ArtistPage_select_container {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+}
+
+.ArtistPage_button {
+    margin-top: 5vh;
+    width: 20vw;
+    height: 10vh;
+    font-size: 20px;
+    background: #232524;
+    color: #F0EFEF;
+    border-radius: 10px;
+}
+
+#ClownOne, #ClownTwo, #ClownThree {
+    display: none;
+    position: absolute;
+    color: white;
+    width: 20vw;
+    height: 5vh;
+    font-size: 20px;
+}
+
+.ArtistPage_artist{
+    background: red;
+    width: 20vw;
+    height: 10vh;
+    margin: auto;
+    
 }

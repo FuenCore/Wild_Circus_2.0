@@ -1,7 +1,12 @@
-import React from "react"
+import React, { useState } from "react"
 import './PlacePage.css'
 
 const PlacePage = () => {
+
+    const [ placeShow, setPlaceShow ] = useState({
+        place: 1
+    })
+
     return(
         <div className="PlacePage_container">
             Je suis une PlacePage
@@ -9,12 +14,11 @@ const PlacePage = () => {
                 <div className="PlacePage_aside_list">
                     Events list
                     <ul className="PlacePage_ul">
-                        <li className="PlacePage_li">Exemple 1</li>
-                        <li className="PlacePage_li">Exemple 2</li>
-                        <li className="PlacePage_li">Exemple 3</li>
-                        <li className="PlacePage_li">Exemple 4</li>
-                        <li className="PlacePage_li">Exemple 5</li>
-
+                        <li  className="PlacePage_li">Exemple 1</li>
+                        <li  className="PlacePage_li">Exemple 2</li>
+                        <li  className="PlacePage_li">Exemple 3</li>
+                        <li  className="PlacePage_li">Exemple 4</li>
+                        <li  className="PlacePage_li">Exemple 5</li>
                     </ul>
                 </div>
                 <div className="PlacePage_aside_location">

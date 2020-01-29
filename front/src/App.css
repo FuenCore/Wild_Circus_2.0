@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Six+Caps&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:100,300,400,500&display=swap');
+
 * {
   --red: #330000;
   --black: #232524;
@@ -7,7 +10,7 @@
 /* Minimal reset css */
 html {
   box-sizing: border-box;
-  font-size: 16px;
+  font-size: 16px;  
 }
 
 *, *:before, *:after {
@@ -31,32 +34,33 @@ img {
 
 .App {
   text-align: center;
-  background: var(--red);
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 100;
 }
 
 .App-link {
   color: #61dafb;
+}
+
+.App_navBar {
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  top: 0;
+}
+
+.App_BgGlitch {
+  text-align: center;
+  font-family: 'Six Caps', sans-serif;
+  position: fixed;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+}
+
+#App_Img {
+  position: absolute;
+
+  z-index: -1;
 }
 

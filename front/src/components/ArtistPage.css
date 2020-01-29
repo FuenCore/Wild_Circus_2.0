@@ -34,9 +34,25 @@
 }
 
 .ArtistPage_artist{
-    background: red;
+    display: flex;
+    flex-direction: row;
     width: 20vw;
     height: 10vh;
     margin: auto;
-    
+    border: 2px solid #F0EFEF;
+
+}
+
+
+.ArtistPage_img {
+    background-color: red;
+    border-radius: 10px;
+    width: 75px;
+    height: 75px;
+    margin: auto 10px;
+}
+
+.ArtistPage_name, .ArtistPage_age, .ArtistPage_benef {
+    color: #2D882D;
+    margin: 10px 20px;
 }

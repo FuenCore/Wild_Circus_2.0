@@ -8,8 +8,10 @@
     justify-content: center;
     margin: 9vh auto;
     width: 50vw;
+    min-width: 300px;
     border-radius: 10px;
     opacity: 0.3;
+    border: 2px solid #2D882D;
 }
 
 .HomePage_button_container {
@@ -19,4 +21,3 @@
     justify-items: center;
 }
 
-/* GLITCH HOME */

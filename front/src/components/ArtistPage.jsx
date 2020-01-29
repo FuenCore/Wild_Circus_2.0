@@ -41,13 +41,24 @@ const ArtistPage = () => {
 					<button className="ArtistPage_button" name="react_clown" onClick={() => displayClownsOne()}>
 						Montrer les clowns
 					</button>
+					
                     <div id="ClownOne" className="ArtistPage_artist_container">
-					<div className="ArtistPage_artist">Exemple </div>
-					<div className="ArtistPage_artist" >Exemple </div>
-					<div className="ArtistPage_artist" >Exemple </div>
-					<div className="ArtistPage_artist" >Exemple </div>
-					<div className="ArtistPage_artist" >Exemple </div>
-					<div className="ArtistPage_artist" >Exemple </div>
+					<div className="ArtistPage_artist">
+					<div className="ArtistPage_img"></div>
+					<div className="ArtistPage_info">
+					<p className="ArtistPage_name">JSON, 19 ans</p>
+					<p className="ArtistPage_benef">Braqueur $420.000</p>
+					</div>
+					</div>
+					
+					<div className="ArtistPage_artist">
+					<div className="ArtistPage_img"></div>
+					<div className="ArtistPage_info">
+					<p className="ArtistPage_name">JSON, 19 ans</p>
+					<p className="ArtistPage_benef">Braqueur $420.000</p>
+					</div>
+					</div>
+					
                     </div>
 				</div>
 

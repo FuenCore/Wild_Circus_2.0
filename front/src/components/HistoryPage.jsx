@@ -10,8 +10,8 @@ const HistoryPage = () => {
                 <div className="HistoryPage_img">Je suis une image</div>
                 </div>
                 <div className="HistoryPage_controler">
-                    <div id="HistoryPage_controler_up">^</div>
-                    <div id="HistoryPage_controler_down">^</div>
+                    <button id="HistoryPage_controler_up">^</button>
+                    <button id="HistoryPage_controler_down">^</button>
                 </div>
             <div className="HistoryPage_aside_right">
             <h3 className="HistoryPage_date">1998</h3>

@@ -18,23 +18,27 @@
     width: 400px;
     height: 400px;
     background: var(--black);
-    border-radius: 200px;
+    border-radius: 10px;
+    border: 2px solid #330000;
 }
 
 .HistoryPage_controler {
     display: flex;
     flex-direction: column;
-    padding-top: calc(20vh + 200px);
+    padding-top: calc(20vh + 75px);
 }
 
 #HistoryPage_controler_up, #HistoryPage_controler_down {
     background: var(--black);
     font-size: 40px;
-    color: var(--white);
+    color: #2D882D;
     width: 50px;
     height: 50px;   
     border-radius: 50px;
-    padding-top: 9px;
+    padding-top: 6px;
+    margin: 50px;
+    border: 2px solid #2D882D;
+
 }
 
 #HistoryPage_controler_down {
@@ -45,9 +49,11 @@
     display: flex;
     flex-direction: column;
     height: 98vh;
-    background-color: red;
     padding : 0;
     width: 400Px;
+    border: 2px solid #330000;
+    border-radius: 10px;
+
 }
 
 .HistoryPage_container_img {
@@ -57,10 +63,27 @@
 .HistoryPage_text {
     height: 400px;
     margin: 50px 30px;
-    background: var(--black);
+    border-top: 2px solid #330000;
 }
 
 .HistoryPage_date, .HistoryPage_place {
     text-align: left;
     margin: 20px;
+}
+
+.HistoryPage_date {
+    padding-top: 12vh;
+    font-size: 75px;
+    color: #f0f0f0;
+}
+
+.HistoryPage_place {
+    font-size: 50px;
+    color: #2D882D;
+
+}
+
+.HistoryPage_text {
+    padding-top: 5vh;
+    color: #2D882D;
 }

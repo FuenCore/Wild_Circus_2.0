@@ -1,22 +1,25 @@
 * {
-  --red: #330000;
-  --black: #232524;
-  --white: #F0EFEF;
+	--red: #330000;
+	--black: #232524;
+	--white: #f0efef;
 }
 
 .NavBar_ul {
-    position: static;
-    width: 100%;
-    display: flex;
-    list-style: none;
-    flex-direction: row;
-    justify-content: space-between;
-    background: var(--black);
-    color: var(--white);
-    margin: 0;
-    padding: 0;
+	position: static;
+	width: 100%;
+	display: flex;
+	list-style: none;
+	flex-direction: row;
+	justify-content: space-between;
+	color: var(--white);
+	margin: 0;
+	padding: 0;
 }
 
 .NavBar_li {
-    margin: 20px 20px ;
+	margin: 20px 20px;
+}
+
+#logo {
+    height: 50px;
 }

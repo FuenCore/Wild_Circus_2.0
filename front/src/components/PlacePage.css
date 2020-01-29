@@ -1,0 +1,23 @@
+.PlacePage_container {
+    height: 100vh;
+}
+
+.PlacePage_aside_list {
+    width: 400px;
+    height: 400px;
+    background: red;
+    margin: auto;
+}
+
+.PlacePage_aside_location {
+    width: 400px;
+    height: 400px;
+    background: red;
+    margin: 25vh auto;
+}
+
+.PlacePage_container_aside {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}

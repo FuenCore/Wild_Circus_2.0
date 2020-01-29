@@ -1,0 +1,20 @@
+* {
+  --red: #330000;
+  --black: #232524;
+  --white: #F0EFEF;
+}
+
+.NavBar_ul {
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    justify-content: space-between;
+    background: var(--black);
+    color: var(--white);
+    margin: 0;
+    padding: 0;
+}
+
+.NavBar_li {
+    margin: 20px 20px ;
+}

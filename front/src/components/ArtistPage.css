@@ -1,0 +1,23 @@
+* {
+    --red: #330000;
+    --black: #232524;
+    --white: #F0EFEF;
+  }  
+
+.ArtistPage_container {
+    height: 100vh;
+}
+
+.ArtistPage_perso {
+    width: 80vw;
+    height: 40vh;
+    border: 2px solid var(--black);
+    margin: 40vh auto;
+    border-radius: 10px;
+}
+
+.ArtistPage_select_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}

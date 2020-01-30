@@ -1,17 +1,25 @@
+a { 
+    text-decoration: none;
+}
+
 #BurgerMenu_menu {
     display: flex;
-    width: 20vw;
+    width: 300px;
     height: 100vh;
-    margin-right: -20vw;
+    margin-right: -300px;
     display: flex;
     flex-direction: column;
     position: fixed;
     z-index: 0;
     right: 0;
     transition: 1s;
-    -webkit-box-shadow: 22px 24px 45px -17px rgba(0,0,0,0.45);
-	-moz-box-shadow: 22px 24px 45px -17px rgba(0,0,0,0.45);
-	box-shadow: 22px 24px 45px -17px rgba(0,0,0,0.45);
+    background: rgba(0, 0, 0, 0.866);
+    top: 0;
+    padding-top: 100px;
+    -webkit-box-shadow: -20px 24px 26px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: -28px 24px 26px 0px rgba(0,0,0,0.75);
+box-shadow: -28px 24px 26px 0px rgba(0,0,0,0.75);
+
 }
 
 .BurgerMenu_button {
@@ -25,20 +33,19 @@
     background: none;
     font-size: 30px;
     position: absolute;
-    z-index: 0;
+    z-index: 3;
     -webkit-box-shadow: 22px 24px 45px -17px rgba(0,0,0,0.45);
 	-moz-box-shadow: 22px 24px 45px -17px rgba(0,0,0,0.45);
     box-shadow: 22px 24px 45px -17px rgba(0,0,0,0.45);
-    transition: 0.5s;
-    transform: rotate(180deg);
+    transition: 1s;
 }
 
-.BurgerMenu_button:focus {
+/* .BurgerMenu_button:focus {
     transform: rotate(0deg);
-}
+} */
 
 .BurgerMenu_navlink {
-    padding: 2vh 0 2vh 3vw;
+    padding: 2vh 0 2vh 0;
     color: #f0efef;
     list-style-type: none;
     width: 100%;

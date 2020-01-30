@@ -17,7 +17,7 @@ const PlacePage = () => {
 			  console.log(exploit)
 
     return(
-        <div className="PlacePage_container">
+        <div id="PlacePage_teleport" className="PlacePage_container">
             <div className="PlacePage_container_aside">
                 <div className="PlacePage_aside_list">
                     <ul className="PlacePage_ul">

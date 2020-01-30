@@ -6,20 +6,13 @@ import PlacePage from "./components/PlacePage"
 import ArtistPage from './components/ArtistPage';
 import HistoryPage from './components/HistoryPage';
 import BgGlitch from './components/BgGlitch';
+import Main from "./components/Main"
+import Routes from "./routes/Routes"
 
 function App() {
   return (
     <div className="App">
-      <div className="App_navBar">
-      <NavBar />
-      </div>
-      <div className="App_BgGlitch">
-      <BgGlitch />
-      </div>
-      <HomePage />
-      <PlacePage />
-      <ArtistPage />
-      <HistoryPage />
+      <Routes />
     </div>
   );
 }

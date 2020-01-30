@@ -32,7 +32,6 @@ const HistoryPage = () => {
 			  console.log(history)
 	return (
 		<div className="HistoryPage_container">
-			Je suis une page d'histoire
 			<div className="HistoryPage_aside_left">
 				<div className="HistoryPage_container_img">
 					<div className="HistoryPage_img">

@@ -18,7 +18,7 @@
     width: 400px;
     height: 400px;
     border-radius: 20px;
-    border: 2px solid #330000;
+    border: 5px solid #330000;
 }
 
 .HistoryPage_controler {
@@ -51,7 +51,7 @@
     height: 90vh;
     padding : 0;
     width: 400Px;
-    border: 2px solid #330000;
+    border: 4px solid #330000;
     border-radius: 10px;
 
 }
@@ -90,5 +90,6 @@
 #history_pic {
     height: 400px;
     object-fit: cover;
+    border-radius: 20px;
 }
 

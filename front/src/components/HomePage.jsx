@@ -8,7 +8,8 @@ const HomePage = () => {
 			Je suis une page home
 			<img
 				className="HomePage_img_clown"
-				src={Bg}
+				src={Bg} alt="Background"
+				id="HomePage_img"
 			/>
 
 		</div>

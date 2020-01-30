@@ -5,8 +5,10 @@ body {
 
 
 .BgGLitch_color {
-  color: #2D882D;
-  font-size: 120px;
+  color: rgb(167, 23, 23);
+  font-size: 140px;
+  margin-left: -20px;
+  opacity: 0.75;
 }
 
   .BgGlitch_p{

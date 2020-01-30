@@ -8,10 +8,10 @@ const NavBar = () => {
         <div className="NavBar_container">
         <ul className="NavBar_ul">
             <li className="NavBar_li">
-                <img id="logo"src={Logo}></img>
+                <img id="logo"src={Logo} alt="Logo"></img>
             </li>
             <li className="NavBar_li">BANNER</li>
-            <li className="NavBar_li">Oui</li>
+            <li className="NavBar_li"></li>
         </ul>
         <BurgerMenu />
 

@@ -2,7 +2,7 @@ const express = require("express");
 const app = express();
 const port = 5000;
 const connection = require("./config");
-const api = require("/.routes")
+const api = require("./routes")
 
 const bodyParser = require('body-parser');
 app.use(bodyParser.json());

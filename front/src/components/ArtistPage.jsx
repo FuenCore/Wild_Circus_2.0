@@ -39,7 +39,7 @@ const ArtistPage = () => {
 			<div className="ArtistPage_select_container">
 				<div className="ArtistPage_container_clowns">
 					<button className="ArtistPage_button" name="react_clown" onClick={() => displayClownsOne()}>
-						Montrer les clowns
+					🤡 Les braqueurs 
 					</button>
 					
                     <div id="ClownOne" className="ArtistPage_artist_container">
@@ -47,7 +47,7 @@ const ArtistPage = () => {
 					<div className="ArtistPage_img"></div>
 					<div className="ArtistPage_info">
 					<p className="ArtistPage_name">JSON, 19 ans</p>
-					<p className="ArtistPage_benef">Braqueur $420.000</p>
+					<p className="ArtistPage_benef">Gains : $420.000</p>
 					</div>
 					</div>
 					
@@ -55,7 +55,7 @@ const ArtistPage = () => {
 					<div className="ArtistPage_img"></div>
 					<div className="ArtistPage_info">
 					<p className="ArtistPage_name">JSON, 19 ans</p>
-					<p className="ArtistPage_benef">Braqueur $420.000</p>
+					<p className="ArtistPage_benef">Gains : $420.000</p>
 					</div>
 					</div>
 					
@@ -64,7 +64,7 @@ const ArtistPage = () => {
 
 				<div className="ArtistPage_container_clowns">
 					<button className="ArtistPage_button" name="angular_clown" onClick={() => displayClownsTwo()}>
-						Montrer les clowns
+					🤡 Les hackers
 					</button>
                     <div id="ClownTwo" className="ArtistPage_artist_container">
 					<div className="ArtistPage_artist">Exemple</div>
@@ -78,7 +78,7 @@ const ArtistPage = () => {
 
 				<div className="ArtistPage_container_clowns">
 					<button className="ArtistPage_button" name="php_clown" onClick={() => displayClownsThree()}>
-						Montrer les clowns
+					🤡 Les clowns de main
 					</button>
                     <div id="ClownThree" className="ArtistPage_artist_container">
 					<div className="ArtistPage_artist">Exemple </div>

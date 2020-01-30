@@ -10,8 +10,9 @@
     width: 50vw;
     min-width: 300px;
     border-radius: 10px;
-    opacity: 0.3;
+    opacity: 0.65;
     border: 2px solid #2D882D;
+    animation: ease-in 5s 5s;
 }
 
 .HomePage_button_container {
@@ -19,5 +20,66 @@
     flex-direction: row;
     justify-content: space-evenly;
     justify-items: center;
+}
+
+.HomePage_img_clown:before
+{
+	content: '';
+    opacity: .1;
+	mix-blend-mode: hard-light;
+}
+.HomePage_img_clown:hover
+{
+    animation: animate .2s linear infinite;
+    opacity: 0.3;
+}
+@keyframes animate
+{
+	0%
+	{
+		background-position: 0 0;
+		filter: hue-rotate(0deg);
+	}
+	10%
+	{
+		background-position: 5px 0;
+	}
+	20%
+	{
+		background-position: -5px 0;
+	}
+	30%
+	{
+		background-position: 15px 0;
+	}
+	40%
+	{
+		background-position: -5px 0;
+	}
+	50%
+	{
+		background-position: -25px 0;
+	}
+	60%
+	{
+		background-position: -50px 0;
+	}
+	70%
+	{
+		background-position: 0 -20px;
+	}
+	80%
+	{
+		background-position: -60px -20px;
+	}
+	81%
+	{
+		background-position: 0 0;
+	}
+	100%
+	{
+		background-position: 0 0;
+		filter: hue-rotate(360deg);
+	}
 }
 

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { BrowserRouter as Router, Switch, Redirect, Route } from "react-router-dom";
 import Main from "../components/Main";
 import Login from "../components/auth/Login";
-import { PrivateRoute } from "../components/auth/PrivateRoute";
+import  PrivateRoute  from "../components/auth/PrivateRoute";
 import { AuthContext } from "../components/auth/Auth";
 import PlacePage from "../components/PlacePage";
 import ArtistPage from "../components/ArtistPage";
@@ -22,11 +22,8 @@ const Routes = () => {
         <AuthContext.Provider value={{ authTokens, setAuthTokens: setTokens, dataAuth, setDataAuth }}>
         <Router>
             <Switch>
-                <Route exact path="/Main" component={Main} />
-                {/* <Route path="/Login" component={Login} />
-                <Route path="/Place" component={PlacePage} />
-                <Route path="/Team" component={ArtistPage} />
-                <Route path="/History" component={HistoryPage}/> */}
+                <PrivateRoute path="/Main" component={Main} />
+                <Route path="/Login" component={Login} />
                 </Switch>
         </Router>
         </AuthContext.Provider>

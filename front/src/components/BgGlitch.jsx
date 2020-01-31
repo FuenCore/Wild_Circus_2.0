@@ -4,9 +4,9 @@ import './BgGlitch.css';
 const BgGlitch = () => {
 	return (
 		<div className="BgGlitch_container">
-			<div class="glitch" data-text="HACK CIRCUS">
-			<div class="BgGLitch_color">HACK_CIRCUS</div>
-			<p class="BgGlitch_p">LE DARKNET DES CLOWNS</p>	
+			<div class="glitch" data-text="H4CK_C1RCU5">
+			<div class="BgGLitch_color">H4CK_C1RCU5</div>
+			<p class="BgGlitch_p">LE DA4KNET DES CL0WNS</p>	
 			</div>
 			<div class="glow">HACK_CIRCUS</div>
 			<div class="scanlines" />

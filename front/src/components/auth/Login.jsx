@@ -9,14 +9,14 @@ const Login = ({ dispatch }, props) => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [isError, setIsError] = useState(false);
   const [username, setUsername] = useState('');
-  const [password, setPassword] = useState('');
+  const [pass, setPass] = useState('');
   const { setAuthTokens } = useAuth();
 
   const postLogin = () => {
     axios
-      .post(`${process.env.REACT_APP_AXIOS_URL}/api/auth/login`, {
+      .post(`http://localhost:5000/api/auth/login`, {
         username,
-        password
+        pass
       })
       .then(res => {
         setAuthTokens(res.data.token);
@@ -42,7 +42,7 @@ const Login = ({ dispatch }, props) => {
   };
 
   if (isLoggedIn) {
-    return <Redirect to="/Home" />;
+    return <Redirect to="/Main" />;
   }
   return (
     <div className="Login_container">
@@ -84,7 +84,7 @@ const Login = ({ dispatch }, props) => {
         </div>
       </div> */}
       <input name="username" className="Login_username" type="username" placeholder="Nom de compte" onChange={(e) => setUsername(e.target.value)}/>
-      <input name="password" className="Login_password" type="password" placeholder="Mot de passe" onChange={(e) => setPassword(e.target.value)}/>
+      <input name="password" className="Login_password" type="password" placeholder="Mot de passe" onChange={(e) => setPass(e.target.value)}/>
       <button className="Login_button" onClick={() => postLogin()}>Connexion</button>
     </div>
   );

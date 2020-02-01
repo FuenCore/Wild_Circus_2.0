@@ -4,6 +4,7 @@ import { useAuth, AuthContext } from './auth/Auth';
 import Axios from 'axios';
 import ProfileContext from './ProfileContext';
 import { Redirect } from 'react-router-dom';
+import BgGlitch from "./BgGlitch";
 
 const Profile = () => {
 
@@ -32,23 +33,12 @@ const Profile = () => {
 		return <Redirect to="/Login" />;
 	}
 
-    // function fetchData() {
-    //     Axios
-    //       .get(`http://localhost:5000/api/user/update/${dataUser.id}`)
-    //       .then(res => res.data)
-    //       .then(data => setDataProfile(data));
-    //   }
-    
-    //   useEffect(() => {
-    //     fetchData();
-    //     // Do not delete comments under this comments it helps to vaoid a temporarly problem in react with calling function inside useEffect
-    //     // eslint-disable-next-line react-hooks/exhaustive-deps
-    //   }, []);
-
-
 	return (
         <ProfileContext.Provider value={{ dataProfile }}>
 		<div className="Profile_container">
+        <div className="Profile_BgGlitch">
+				<BgGlitch title="Voici ta page perso" glitch="$$$$$$$$$$$$"/>
+			</div>	
 			<div className="Profile_input_container">
 				<img
 					className="Profile_user_img"

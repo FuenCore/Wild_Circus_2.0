@@ -12,6 +12,8 @@
 }
 
 .PlacePage_aside_location {
+    object-fit: cover;
+    background-repeat: no-repeat;
     width: 50vh;
     height: 50vh;
     margin: 25vh auto;

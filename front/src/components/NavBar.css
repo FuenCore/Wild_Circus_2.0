@@ -20,5 +20,14 @@
 }
 
 #logo {
-    height: 50px;
+	max-height: 50px;
+	object-fit: cover;
+}
+
+#NavBar_button {
+	width: 80px;
+}
+
+#NavBar_strong {
+	color: #2b882B;
 }

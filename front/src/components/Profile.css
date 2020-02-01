@@ -73,3 +73,12 @@
     border-radius: 75px;
     transition: 2s;
 }
+
+.Profile_BgGlitch {
+    text-align: center;
+    font-family: 'Six Caps', sans-serif;
+    position: fixed;
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+}

@@ -18,9 +18,9 @@
 
 .ArtistPage_button {
     margin-top: 5vh;
-    width: 20vw;
+    width: 350px;
     height: 10vh;
-    font-size: 20px;
+    font-size: 18px;
     background: #232524;
     color: #F0EFEF;
     border: 2px solid #2D882D;
@@ -33,15 +33,15 @@
     display: none;
     position: absolute;
     color: white;
-    width: 20vw;
+    width: 350px;
     height: 5vh;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .ArtistPage_artist{
     display: flex;
     flex-direction: row;
-    width: 20vw;
+    width: 350px;
     height: auto;
     margin: auto;
     border: 2px solid #330000;

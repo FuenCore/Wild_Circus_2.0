@@ -27,13 +27,12 @@
 }
 
 .HistoryPage_block {
+    position: relative;
 	margin: 20px auto;
 	padding: 0;
     width: 60vw;
-    height: 55vh;
     border: 4px solid #330000;
     border-radius: 10px;
-    overflow: auto;
     background: black;
 
 }

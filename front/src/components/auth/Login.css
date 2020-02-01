@@ -7,12 +7,10 @@
 }
 
 .Login_input_container {
-    background: #232524;
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin: auto auto;
-    border: 2px #2D882D solid;
     border-radius: 20px;
 }
 
@@ -27,6 +25,7 @@
     border-radius: 10px;
     color: #F0EFEF;
     font-size: 20px;
+    background: black;
 }
 
 .Login_button {
@@ -40,6 +39,8 @@
     color: #2D882D;
     font-size: 20px;
     transition: 0.5s;
+    background: black;
+
 }
 
 .Login_button_skip {
@@ -53,6 +54,8 @@
     color: #2D882D;
     font-size: 20px;
     transition: 0.5s;
+    background: black;
+
 }
 
 .Login_button:hover {
@@ -60,11 +63,41 @@
     color: black;
 }
 
+.Login_button_skip:hover {
+    background: #2D882D;
+    color: black;
+}
+
+.Login_container_title {
+    top: 20%;
+    left: 50%;
+    position: absolute;
+    margin: auto;
+    z-index: 2;
+    width: 250px;
+    transform: translate(-50%, -50%);
+}
+
 .Login_title {
+    width: 250px;
     font-size: 3vh;
-    margin: 50px;
+    margin: 0 0 50px 0;
     color: #2D882D;
-    
+    text-transform: uppercase;
+    font-weight: bolder;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 5px ridge #2D882D;
+    animation: wow 4s steps(30, end);
+}
+
+@keyframes wow {
+    from{
+        width: 0px;
+    }
+    to {
+        width: 250px;
+    }
 }
 
 .Login_container_button {
@@ -72,3 +105,12 @@
     display: flex;
     flex-direction: column;
 }
+
+.Login_BgGlitch {
+    text-align: center;
+    font-family: 'Six Caps', sans-serif;
+    position: fixed;
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+  }

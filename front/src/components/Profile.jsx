@@ -37,9 +37,10 @@ const Profile = () => {
         <ProfileContext.Provider value={{ dataProfile }}>
 		<div className="Profile_container">
         <div className="Profile_BgGlitch">
-				<BgGlitch title="Voici ta page perso" glitch="$$$$$$$$$$$$"/>
+				<BgGlitch title="Voici ta page perso" glitch="_________"/>
 			</div>	
 			<div className="Profile_input_container">
+                
 				<img
 					className="Profile_user_img"
 					src={(dataUser && dataUser.userInfo && dataUser.userInfo.avatar) || defaultAvatar}

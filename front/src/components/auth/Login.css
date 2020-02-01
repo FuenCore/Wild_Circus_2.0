@@ -26,6 +26,9 @@
     color: #F0EFEF;
     font-size: 20px;
     background: black;
+    -webkit-box-shadow: 10px 10px 38px 22px rgba(45,136,45,1);
+    -moz-box-shadow: 10px 10px 38px 22px rgba(45,136,45,1);
+    box-shadow: 0px 0px 5px 0px rgba(45,136,45,1);
 }
 
 .Login_button {
@@ -40,6 +43,9 @@
     font-size: 20px;
     transition: 0.5s;
     background: black;
+    -webkit-box-shadow: 10px 10px 38px 22px rgba(45,136,45,1);
+    -moz-box-shadow: 10px 10px 38px 22px rgba(45,136,45,1);
+    box-shadow: 0px 0px 5px 0px rgba(45,136,45,1);
 
 }
 
@@ -55,6 +61,9 @@
     font-size: 20px;
     transition: 0.5s;
     background: black;
+    -webkit-box-shadow: 10px 10px 38px 22px rgba(45,136,45,1);
+    -moz-box-shadow: 10px 10px 38px 22px rgba(45,136,45,1);
+    box-shadow: 0px 0px 5px 0px rgba(45,136,45,1);
 
 }
 

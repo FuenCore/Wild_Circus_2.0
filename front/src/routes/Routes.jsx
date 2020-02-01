@@ -3,15 +3,16 @@ import { BrowserRouter as Router, Switch, Redirect, Route } from "react-router-d
 import Main from "../components/Main";
 import Login from "../components/auth/Login";
 import  PrivateRoute  from "../components/auth/PrivateRoute";
-import { AuthContext } from "../components/auth/Auth";
-import PlacePage from "../components/PlacePage";
-import ArtistPage from "../components/ArtistPage";
-import HistoryPage from "../components/HistoryPage";
+import AuthContext  from "../components/auth/Auth";
+import BgMatrix from "../components/BgMatrix";
+import AdminMain from "../components/adminPanel/AdminMain"
 
 const Routes = () => {
 
     const [ authTokens, setAuthTokens ] = useState();
-    const [  dataAuth, setDataAuth ] = useState();
+    const [ dataAuth, setDataAuth ] = useState();
+    const [ userInfo, setUserInfo ] = useState();
+
 
     const setTokens = data => {
         localStorage.setItem('tokens', JSON.stringify(data));
@@ -19,11 +20,13 @@ const Routes = () => {
     }
 
     return(
-        <AuthContext.Provider value={{ authTokens, setAuthTokens: setTokens, dataAuth, setDataAuth }}>
+        <AuthContext.Provider value={{ authTokens, setAuthTokens: setTokens, dataAuth, setDataAuth, userInfo, setUserInfo }}>
         <Router>
             <Switch>
                 <PrivateRoute path="/Main" component={Main} />
-                <Route path="/Login" component={Login} />
+                <PrivateRoute path="/Login" component={Login} />
+                <PrivateRoute path="/Admin" component={AdminMain} />
+                <Route path="/matrix" component={BgMatrix} />
                 </Switch>
         </Router>
         </AuthContext.Provider>

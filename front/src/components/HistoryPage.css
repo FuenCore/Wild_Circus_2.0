@@ -93,3 +93,10 @@
     border-radius: 20px;
 }
 
+.BurgerMenu_user_name {
+    font-size: 26px;
+}
+
+.BurgerMenu_user {
+    margin-top: 20px;
+}

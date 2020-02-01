@@ -1,0 +1,55 @@
+.Login_container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+
+}
+
+.Login_input_container {
+    background: #232524;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto auto;
+    border: 2px #2D882D solid;
+    border-radius: 20px;
+}
+
+.Login_username, .Login_password {
+    margin: 30px 100px;
+    height: 50px;
+    width: 20vw;
+    min-width: 200px;
+    padding: 10px;
+    background: none;
+    border: 2px solid #2D882D;
+    border-radius: 10px;
+    color: #F0EFEF;
+    font-size: 20px;
+}
+
+.Login_button {
+    margin: 30px auto;
+    height: 50px;
+    width: 150px;
+    padding: 10px;
+    background: none;
+    border: 2px solid #2D882D;
+    border-radius: 10px;
+    color: #2D882D;
+    font-size: 20px;
+    transition: 0.5s;
+}
+
+.Login_button:hover {
+    background: #2D882D;
+    color: black;
+}
+
+.Login_title {
+    font-size: 3vh;
+    margin: 50px;
+    color: #2D882D;
+    
+}

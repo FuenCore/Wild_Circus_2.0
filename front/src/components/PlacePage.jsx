@@ -14,8 +14,6 @@ const PlacePage = () => {
 		  .then(res => res.data)
 		  .then(data => setExploit(data))
 			  }, []);
-			  console.log(exploit)
-
     return(
         <div id="PlacePage_teleport" className="PlacePage_container">
             <div className="PlacePage_container_aside">

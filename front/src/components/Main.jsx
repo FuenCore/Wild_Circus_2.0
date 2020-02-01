@@ -7,7 +7,7 @@ import ArtistPage from './ArtistPage';
 import HistoryPage from './HistoryPage';
 import BgGlitch from './BgGlitch';
 
-function Main() {
+const Main = () => {
 	return (
 		<div className="Main">
 			<div className="Main_navBar">

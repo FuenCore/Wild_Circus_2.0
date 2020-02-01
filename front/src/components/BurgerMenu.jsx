@@ -1,8 +1,16 @@
 import React, { useState } from 'react';
 import { HashLink as Link } from 'react-router-hash-link';
+import AuthContext from "./auth/Auth";
+import Logout from '../assets/logout.png'
 import './BurgerMenu.css';
 
 const BurgerMenu = () => {
+
+	const dataUser = React.useContext(AuthContext);
+
+	// console.log(dataUser.userPseudo)
+	// console.log(dataUser.userAvatar)
+
 	const [ displayBurger, setDisplayBurger ] = useState({
 		open: true
 	});
@@ -29,16 +37,18 @@ const BurgerMenu = () => {
 
 			<ul id="BurgerMenu_menu">
 				<li className="BurgerMenu_user">
-				<div className="BurgerMenu_user_img" />
+				{/* <img className="BurgerMenu_user_img" src={dataUser.userAvatar}/> */}
+				<img className="BurgerMenu_user_img" src={dataUser && dataUser.userInfo && dataUser.userInfo.avatar}/>
 				</li>
 				<li className="BurgerMenu_user">
-					<h3 className="BurgerMenu_user_name">FuenCore</h3>
+				<h3 className="BurgerMenu_user_name">{dataUser && dataUser.userInfo && dataUser.userInfo.pseudo}</h3>
 				</li>
 				<div className="BurgerMenu_navlink_container">
 				<Link to="/main#Home_teleport"><li className="BurgerMenu_navlink">Page d'accueil</li></Link>
 				<Link to="/main#Place_teleport"><li className="BurgerMenu_navlink">Nos exploits</li></Link>
 				<Link to="/main#Team_teleport"><li className="BurgerMenu_navlink">Notre team</li></Link>
 				<Link to="/main#History_teleport"><li className="BurgerMenu_navlink">Notre histoire</li></Link>	
+				<Link to="/Login"><img className="BurgerMenu_logout" src={Logout} onClick={localStorage.clear()} /></Link>
 				</div>
 			</ul>
 		</div>

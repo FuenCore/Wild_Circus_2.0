@@ -40,32 +40,26 @@ box-shadow: -28px 24px 26px 0px rgba(0,0,0,0.75);
     transition: 1s;
 }
 
-/* .BurgerMenu_button:focus {
-    transform: rotate(0deg);
-} */
-
 .BurgerMenu_navlink {
     padding: 2vh 0 2vh 0;
     color: #f0efef;
     list-style-type: none;
     width: 100%;
     transition-duration: 0,5s;
-    margin: 30px 0;
+    margin: 0px 0;
 }
 
 .BurgerMenu_navlink:hover {
     color: #232524;
     background: #2D882D;
     transition-duration: 0,5s;
-    border: #2D882D 1px solid;
-    font-size: 20px;
 }
 
 .BurgerMenu_user_img{
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     background-color: #673aB7;
-    border-radius: 50px;
+    border-radius: 75px;
 
 }
 
@@ -87,4 +81,9 @@ box-shadow: -28px 24px 26px 0px rgba(0,0,0,0.75);
 
 .BurgerMenu_navlink_container{
     margin-top: 10vh;
+}
+
+.BurgerMenu_logout {
+    width: 50px;
+    margin-top: 150px;
 }

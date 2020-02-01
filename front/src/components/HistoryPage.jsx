@@ -3,22 +3,7 @@ import './HistoryPage.css';
 import axios from "axios";
 
 const HistoryPage = () => {
-	const History = {
-		date: [],
-		place: [],
-		text: []
-	};
-
-
-	// date: [ 1996, 2004, 2012, 2019 ],
-	// place: [ 'Bordeaux', 'Amsterdam', 'Bogota', 'Cuba' ],
-	// text: [
-	// 	"Blablabla, React c'est cool franchement",
-	// 	"Blablabla, Angular c'est cool franchement",
-	// 	"Blablabla, Ouais c'est cool franchement",
-	// 	"Blablabla, PHP c'est pas ouf franchement"
-	// ]
-
+	
 	const [ history, setHistory ] = useState([])
 
 	const [ slideCounter, setSlideCounter ] = useState(0);
@@ -29,7 +14,6 @@ const HistoryPage = () => {
 		  .then(res => res.data)
 		  .then(data => setHistory(data))
 			  }, []);
-			  console.log(history)
 	return (
 		<div className="HistoryPage_container">
 			<div className="HistoryPage_aside_left">

@@ -86,10 +86,11 @@ router.post('/login', (req, res) => {
         res.status(500);
       } else {
         if (user) {
+          console.log(user)
           bcrypt.compare(formPass, user[0].pass, function(err, results) {
             if (results) {
               console.log('yes');
-              jwt.sign({ user }, 'pass', { expiresIn: '300s' }, (err, token) => {
+              jwt.sign({ user }, 'pass', { expiresIn: '666666s' }, (err, token) => {
                 // save the token in localstorage
                 res.json({ token, user });
               });
@@ -101,6 +102,17 @@ router.post('/login', (req, res) => {
     }
   );
 });
+
+router.get('/info', (req, res) => {
+    const formUser = req.body.username
+    connection.query('SELECT * FROM user WHERE username = ?', [ formUser ], (err, results) => {
+        if(err) {
+            res.status(500).send(err)
+        } else {
+            res.json(results)
+        }
+    })
+})
 
 // Fomat token
 // Authorization: Bearer <access_token>

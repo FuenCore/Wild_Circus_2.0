@@ -26,8 +26,9 @@ const Login = (props) => {
 		setIsLoggedIn(true);
       })
   };
+  
 	if (isLoggedIn) {
-		return <Link to="/Main" />;
+		return <Redirect to="/Main" />;
 	}
 	
 	return (

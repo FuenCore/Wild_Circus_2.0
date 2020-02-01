@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { HashLink as Link } from 'react-router-hash-link';
+import { HashLink as SpaLink } from 'react-router-hash-link';
+import { Link } from "react-router-dom"
 import { AuthContext } from './auth/Auth';
 import Logout from '../assets/logout.png';
 import './BurgerMenu.css';
@@ -32,40 +33,41 @@ const BurgerMenu = () => {
 
 	return (
 		<div className="BurgerMenu_container">
-
 			<AuthContext.Provider value={{ setAuthTokens: null }}>
 				<button id="BurgerMenu" className="BurgerMenu_button" onClick={() => displayAside()}>
 					>
 				</button>
-
 				<ul id="BurgerMenu_menu">
-					<Link to="/Login">
+					<SpaLink to="/Login">
 						<img className="BurgerMenu_logout" src={Logout} onClick={() => destroyToken()} />
-					</Link>
+					</SpaLink>
 					<li className="BurgerMenu_user">
+						<Link to ="/profile">
 						<img
 							className="BurgerMenu_user_img"
 							src={(dataUser && dataUser.userInfo && dataUser.userInfo.avatar) || defaultAvatar}
 						/>
+						</Link>
 					</li>
+					
 					<li className="BurgerMenu_user">
 						<h3 className="BurgerMenu_user_name">
 							{(dataUser && dataUser.userInfo && dataUser.userInfo.pseudo) || 'Stranger'}
 						</h3>
 					</li>
 					<div className="BurgerMenu_navlink_container">
-						<Link to="/main#Home_teleport">
+						<SpaLink to="/main#Home_teleport">
 							<li className="BurgerMenu_navlink">Page d'accueil</li>
-						</Link>
-						<Link to="/main#Place_teleport">
+						</SpaLink>
+						<SpaLink to="/main#Place_teleport">
 							<li className="BurgerMenu_navlink">Nos exploits</li>
-						</Link>
-						<Link to="/main#Team_teleport">
+						</SpaLink>
+						<SpaLink to="/main#Team_teleport">
 							<li className="BurgerMenu_navlink">Notre team</li>
-						</Link>
-						<Link to="/main#History_teleport">
+						</SpaLink>
+						<SpaLink to="/main#History_teleport">
 							<li className="BurgerMenu_navlink">Notre histoire</li>
-						</Link>
+						</SpaLink>
 					</div>
 				</ul>
 			</AuthContext.Provider>

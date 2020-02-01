@@ -5,7 +5,7 @@ a {
 #BurgerMenu_menu {
     display: flex;
     width: 300px;
-    height: 100vw;
+    height: 100vh;
     margin-right: -300px;
     display: flex;
     flex-direction: column;

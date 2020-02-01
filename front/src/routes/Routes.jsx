@@ -4,7 +4,7 @@ import Main from "../components/Main";
 import Login from "../components/auth/Login";
 import { AuthContext }  from "../components/auth/Auth";
 import AdminMain from "../components/adminPanel/AdminMain";
-import Profile from "../components/Profile"
+import Profile from "../components/Profile";
 
 const Routes = () => {
 

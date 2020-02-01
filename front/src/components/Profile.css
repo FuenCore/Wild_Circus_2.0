@@ -1,0 +1,75 @@
+.Profile_container {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+.Profile_input_container {
+    background: #232524;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto auto;
+    border: 2px #2D882D solid;
+    border-radius: 20px;
+}
+
+.Profile_username, .Profile_password {
+    margin: 30px 100px;
+    height: 50px;
+    width: 20vw;
+    min-width: 200px;
+    padding: 10px;
+    background: none;
+    border: 2px solid #2D882D;
+    border-radius: 10px;
+    color: #F0EFEF;
+    font-size: 20px;
+}
+
+.Profile_button {
+    margin: 30px auto;
+    height: 50px;
+    width: 150px;
+    padding: 10px;
+    background: none;
+    border: 2px solid #2D882D;
+    border-radius: 10px;
+    color: #2D882D;
+    font-size: 20px;
+    transition: 0.5s;
+}
+
+.Profile_button_skip {
+    margin: 0 auto 20px auto;
+    height: 50px;
+    width: 100px;
+    padding: 10px;
+    background: none;
+    border: 2px solid #2D882D;
+    border-radius: 10px;
+    color: #2D882D;
+    font-size: 20px;
+    transition: 0.5s;
+}
+
+.Profile_button:hover {
+    background: #2D882D;
+    color: #232524;
+}
+
+.Profile_container_button {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.Profile_user_img{
+    margin: 20px auto;
+    width: 150px;
+    height: 150px;
+    border: 2px solid #2D882D;
+    border-radius: 75px;
+    transition: 2s;
+}

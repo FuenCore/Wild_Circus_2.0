@@ -22,16 +22,10 @@
     justify-items: center;
 }
 
-.HomePage_img_clown:before
-{
-	content: '';
-    opacity: .1;
-	mix-blend-mode: hard-light;
-}
 .HomePage_img_clown:hover
 {
     animation: animate .2s linear infinite;
-    opacity: 0.3;
+    opacity: 0.4;
 }
 @keyframes animate
 {

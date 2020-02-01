@@ -2,10 +2,9 @@ import React, { useState } from "react";
 import { BrowserRouter as Router, Switch, Redirect, Route } from "react-router-dom";
 import Main from "../components/Main";
 import Login from "../components/auth/Login";
-import  PrivateRoute  from "../components/auth/PrivateRoute";
-import AuthContext  from "../components/auth/Auth";
-import BgMatrix from "../components/BgMatrix";
-import AdminMain from "../components/adminPanel/AdminMain"
+import { AuthContext }  from "../components/auth/Auth";
+import AdminMain from "../components/adminPanel/AdminMain";
+import Profile from "../components/Profile"
 
 const Routes = () => {
 
@@ -23,10 +22,10 @@ const Routes = () => {
         <AuthContext.Provider value={{ authTokens, setAuthTokens: setTokens, dataAuth, setDataAuth, userInfo, setUserInfo }}>
         <Router>
             <Switch>
-                <PrivateRoute path="/Main" component={Main} />
-                <PrivateRoute path="/Login" component={Login} />
-                <PrivateRoute path="/Admin" component={AdminMain} />
-                <Route path="/matrix" component={BgMatrix} />
+                <Route path="/Main" component={Main} />
+                <Route path="/Login" component={Login} />
+                <Route path="/Admin" component={AdminMain} />
+                <Route path="/profile" component={Profile} />
                 </Switch>
         </Router>
         </AuthContext.Provider>

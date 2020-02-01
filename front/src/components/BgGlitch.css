@@ -37,6 +37,7 @@ body {
   }
   
   .glitch::after, .glow::after {
+
     content: attr(data-text);
     position: absolute;
     left: 2px;
@@ -250,8 +251,8 @@ body {
   .scanlines::before {
     content: "";
     position: absolute;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     top: 0;
     left: 0;
     background: repeating-linear-gradient(to bottom, transparent 0%, rgba(255, 255, 255, 0.05) 0.5%, transparent 1%);

@@ -5,7 +5,7 @@
 .PlacePage_aside_list {
     width: 40vh;
     height: 40vh;
-    border: 2px solid #4F0808;
+    border: 5px solid #4F0808;
     margin: auto;
     overflow: auto;
     border-radius: 10px;
@@ -15,7 +15,7 @@
     width: 50vh;
     height: 50vh;
     margin: 25vh auto;
-    border: 2px solid #4F0808;
+    border: 5px solid #4F0808;
     border-radius: 10px;
     background-image: url(https://firebasestorage.googleapis.com/v0/b/hackcircus-65650.appspot.com/o/world.png?alt=media&token=a1832673-4c37-4dcc-98c1-a77763ef78d8);
 
@@ -33,7 +33,7 @@
     font-size: 20px;
     padding-top: 8px;
     background: none;
-    border: 1px solid #2D882D;
+    border: 1px solid #4F0808;
     margin: auto;
     color: #2D882D;
     cursor: pointer;

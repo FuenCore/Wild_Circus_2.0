@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
+
 * {
     --red: #330000;
     --black: #232524;
@@ -21,7 +23,10 @@
     font-size: 20px;
     background: #232524;
     color: #F0EFEF;
+    border: 2px solid #2D882D;
     border-radius: 10px;
+    font-family: 'Josefin Sans', sans-serif;
+
 }
 
 #ClownOne, #ClownTwo, #ClownThree {
@@ -39,14 +44,13 @@
     width: 20vw;
     height: auto;
     margin: auto;
-    border: 1px solid #F0EFEF;
+    border: 2px solid #330000;
     border-radius: 10px;
     background: #000000;
 }
 
 
 .ArtistPage_img {
-    background-color: red;
     border-radius: 10px;
     width: 90px;
     height: 90px;

@@ -56,11 +56,10 @@ const ArtistPage = () => {
 
 	return (
 		<div className="ArtistPage_container">
-			Je suis une page d'artiste
 			<div className="ArtistPage_select_container">
 				<div className="ArtistPage_container_clowns">
 					<button className="ArtistPage_button" onClick={() => displayClownsOne()}>
-						🤡 Les braqueurs
+						🤡 LES BRAQUEURS
 					</button>
 
 					<div id="ClownOne" className="ArtistPage_artist_container">
@@ -81,7 +80,7 @@ const ArtistPage = () => {
 
 				<div className="ArtistPage_container_clowns">
 					<button className="ArtistPage_button" onClick={() => displayClownsTwo()}>
-						🤡 Les hackers
+						🤡 LES HACKERS
 					</button>
 					<div id="ClownTwo" className="ArtistPage_artist_container">
 					{hacker.map((x) => (
@@ -101,7 +100,7 @@ const ArtistPage = () => {
 
 				<div className="ArtistPage_container_clowns">
 					<button className="ArtistPage_button" onClick={() => displayClownsThree()}>
-						🤡 Les clowns de main
+						🤡 LES CLOWNS DE MAIN
 					</button>
 					<div id="ClownThree" className="ArtistPage_artist_container">
 					{soldier.map((x) => (

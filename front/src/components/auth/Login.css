@@ -42,6 +42,19 @@
     transition: 0.5s;
 }
 
+.Login_button_skip {
+    margin: 0 auto 20px auto;
+    height: 50px;
+    width: 100px;
+    padding: 10px;
+    background: none;
+    border: 2px solid #2D882D;
+    border-radius: 10px;
+    color: #2D882D;
+    font-size: 20px;
+    transition: 0.5s;
+}
+
 .Login_button:hover {
     background: #2D882D;
     color: black;
@@ -52,4 +65,10 @@
     margin: 50px;
     color: #2D882D;
     
+}
+
+.Login_container_button {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
 }

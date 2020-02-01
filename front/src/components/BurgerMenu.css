@@ -5,7 +5,7 @@ a {
 #BurgerMenu_menu {
     display: flex;
     width: 300px;
-    height: 100vh;
+    height: 100vw;
     margin-right: -300px;
     display: flex;
     flex-direction: column;
@@ -58,19 +58,21 @@ box-shadow: -28px 24px 26px 0px rgba(0,0,0,0.75);
 .BurgerMenu_user_img{
     width: 150px;
     height: 150px;
-    background-color: #673aB7;
+    background-color: #2D882D;
     border-radius: 75px;
-
+    transition: 2s;
 }
 
 .BurgerMenu_user {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    margin-top: 20px;
+
 }
 
 .BurgerMenu_user_name{
-    margin: 30px;
+    margin: 26px;
     color: #2D882D;
 }
 
@@ -85,5 +87,13 @@ box-shadow: -28px 24px 26px 0px rgba(0,0,0,0.75);
 
 .BurgerMenu_logout {
     width: 50px;
-    margin-top: 150px;
+    top: 20px;
+    right: 20px;
+    position: absolute;
+}
+
+.BurgerMenu_user_img:hover {
+    border: 10px solid #C4161D;
+    transition: 2s;
+
 }

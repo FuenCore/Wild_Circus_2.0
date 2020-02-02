@@ -1,32 +1,36 @@
 import React from 'react';
-import '../Main.css';
-import HomePage from '../HomePage';
+import './AdminMain.css';
 import NavBar from '../NavBar';
-import PlacePage from '../PlacePage';
-import ArtistPage from '../ArtistPage';
-import HistoryPage from '../HistoryPage';
 import BgGlitch from '../BgGlitch';
+import { Link } from 'react-router-dom';
 
 const AdminMain = () => {
 	return (
-		<div className="Main">
-			<div className="Main_navBar">
+		<div className="AdminMain">
+			<div className="AdminMain_navBar">
 				<NavBar />
 			</div>
-			<div className="Main_BgGlitch">
-				<BgGlitch />
+			<div className="AdminMain_BgGlitch">
+				<BgGlitch glitch="Hi_Admin" />
 			</div>
-		<div id="Home_teleport"/>
-			<HomePage />
-      <div id="Place_teleport"/>
-			<PlacePage />
-      <div id="Team_teleport"/>
-			<ArtistPage />
-      <div id="History_teleport"/>
-			<HistoryPage />
+			<div className="AdminMain_input_container">
+				<div className="AdminMain_container_button">
+					<Link to="/AddPlace">
+						<button className="AdminMain_button">Editer nos exploits</button>
+					</Link>
+					<Link to="/AddClown">
+						<button className="AdminMain_button">Editer notre team</button>
+					</Link>
+					<Link to="/AddHistory">
+						<button className="AdminMain_button">Editer notre histoire</button>
+					</Link>
+					<Link to="/UserList">
+						<button className="AdminMain_button">Editer les utilisateurs</button>
+					</Link>
+				</div>
+			</div>
 		</div>
-    
 	);
-}
+};
 
 export default AdminMain;

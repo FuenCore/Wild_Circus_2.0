@@ -76,7 +76,7 @@ const BurgerMenu = () => {
 							</Link> */}
 
 							{( isAdmin === 1 ) ? <Link to ="/admin"><li className="BurgerMenu_navlink">Panneau d'admin</li></Link> : null} 
-						)}
+						
 					</div>
 				</ul>
 			</AuthContext.Provider>

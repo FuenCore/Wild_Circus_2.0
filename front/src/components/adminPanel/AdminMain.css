@@ -1,0 +1,93 @@
+
+.AdminMain_input_container {
+    display: flex;
+    padding-top: 20vh;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto auto;
+    border-radius: 20px;
+}
+
+.AdminMain_username, .AdminMain_password {
+    margin: 30px 100px;
+    height: 50px;
+    width: 20vw;
+    min-width: 200px;
+    padding: 10px;
+    background: none;
+    border: 2px solid #2D882D;
+    border-radius: 10px;
+    color: #F0EFEF;
+    font-size: 20px;
+    background: black;
+    -webkit-box-shadow: 10px 10px 38px 22px rgba(45,136,45,1);
+    -moz-box-shadow: 10px 10px 38px 22px rgba(45,136,45,1);
+    box-shadow: 0px 0px 5px 0px rgba(45,136,45,1);
+}
+
+.AdminMain_button {
+    margin: 30px auto;
+    height: 50px;
+    padding: 10px;
+    background: none;
+    border: 2px solid #2D882D;
+    border-radius: 10px;
+    color: #2D882D;
+    font-size: 20px;
+    transition: 0.5s;
+    background: black;
+    -webkit-box-shadow: 10px 10px 38px 22px rgba(45,136,45,1);
+    -moz-box-shadow: 10px 10px 38px 22px rgba(45,136,45,1);
+    box-shadow: 0px 0px 5px 0px rgba(45,136,45,1);
+
+}
+
+.AdminMain_button_skip {
+    margin: 0 auto 20px auto;
+    height: 50px;
+    width: 100px;
+    padding: 10px;
+    background: none;
+    border: 2px solid #2D882D;
+    border-radius: 10px;
+    color: #2D882D;
+    font-size: 20px;
+    transition: 0.5s;
+    background: black;
+    -webkit-box-shadow: 10px 10px 38px 22px rgba(45,136,45,1);
+    -moz-box-shadow: 10px 10px 38px 22px rgba(45,136,45,1);
+    box-shadow: 0px 0px 5px 0px rgba(45,136,45,1);
+
+}
+
+.AdminMain_button:hover {
+    background: #2D882D;
+    color: black;
+}
+
+.AdminMain_button_skip:hover {
+    background: #2D882D;
+    color: black;
+}
+
+.AdminMain_container_title {
+    top: 20%;
+    left: 50%;
+    position: absolute;
+    margin: auto;
+    z-index: 2;
+    width: 250px;
+    transform: translate(-50%, -50%);
+}
+.AdminMain_container_button {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.AdminMain_BgGlitch {
+    text-align: center;
+    font-family: 'Six Caps', sans-serif;
+    position: fixed;
+    z-index: -1;
+  }

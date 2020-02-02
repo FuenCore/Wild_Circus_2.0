@@ -4,6 +4,10 @@ import Main from "../components/Main";
 import Login from "../components/auth/Login";
 import { AuthContext }  from "../components/auth/Auth";
 import AdminMain from "../components/adminPanel/AdminMain";
+import AddClown from "../components/adminPanel/AddClown";
+import AddHistory from "../components/adminPanel/AddHistory";
+import AddPlace from "../components/adminPanel/AddPlace";
+import UserList from "../components/adminPanel/UserList";
 import Profile from "../components/Profile";
 import SignUp from "../components/auth/SignUp"
 
@@ -26,6 +30,10 @@ const Routes = () => {
                 <Route path="/Main" component={Main} />
                 <Route path="/Login" component={Login} />
                 <Route path="/Admin" component={AdminMain} />
+                <Route path="/AddClown" component={AddClown}/>
+                <Route path="/AddHistory" component={AddHistory}/>
+                <Route path="/AddPlace" component={AddPlace}/>
+                <Route path="/UserList" component={UserList}/>
                 <Route path="/profile" component={Profile} />
                 <Route path="/signup" component={SignUp} />
                 <Redirect to ="/Login"/>

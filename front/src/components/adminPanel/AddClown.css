@@ -1,0 +1,126 @@
+.AddClown_container {
+	display: flex;
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+}
+.AddClown_input_container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: auto auto;
+	border-radius: 20px;
+}
+
+.AddClown_username,
+.AddClown_password {
+	margin: 30px 100px;
+	height: 50px;
+	width: 20vw;
+	min-width: 200px;
+	padding: 10px;
+	background: none;
+	border: 2px solid #2d882d;
+	border-radius: 10px;
+	color: #f0efef;
+    font-size: 20px;
+    -webkit-box-shadow: 10px 10px 38px 22px rgba(45,136,45,1);
+    -moz-box-shadow: 10px 10px 38px 22px rgba(45,136,45,1);
+    box-shadow: 0px 0px 5px 0px rgba(45,136,45,1);
+}
+
+.AddClown_button {
+	margin: 30px auto;
+	height: 50px;
+	width: 150px;
+	padding: 10px;
+	background: #2d882d;
+	border: 2px solid #2d882d;
+	border-radius: 10px;
+	color: black;
+	font-size: 20px;
+	transition: 0.5s;
+    -webkit-box-shadow: 10px 10px 43px 22px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 43px 22px rgba(0,0,0,0.75);
+	box-shadow: 10px 10px 43px 22px rgba(0,0,0,0.75);
+	font-weight: bold;
+
+}
+
+.AddClown_button:hover {
+	background: #2d882d;
+	color: #232524;
+}
+
+.AddClown_container_button {
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+}
+
+.AddClown_user_img {
+	margin: 20px auto;
+	width: 150px;
+	height: 150px;
+	border: 2px solid #2d882d;
+	border-radius: 75px;
+    transition: 2s;
+    -webkit-box-shadow: 10px 10px 38px 22px rgba(45,136,45,1);
+-moz-box-shadow: 10px 10px 38px 22px rgba(45,136,45,1);
+box-shadow: 0px 0px 25px 0px rgba(45,136,45,1);
+}
+
+.AddClown_BgGlitch {
+	text-align: center;
+	font-family: 'Six Caps', sans-serif;
+	position: fixed;
+	z-index: -1;
+	width: 100vw;
+	height: 100vh;
+}
+
+.upload-btn-wrapper {
+	position: relative;
+	overflow: hidden;
+	display: inline-block;
+  }
+  
+  .btn {
+	border: 2px solid #2d882d;
+	color: black;
+	background-color: #2d882d;
+	padding: 8px 20px;
+	border-radius: 8px;
+	font-size: 20px;
+	font-weight: bold;
+	-webkit-box-shadow: 10px 10px 38px 22px rgba(45,136,45,1);
+	-moz-box-shadow: 10px 10px 38px 22px rgba(45,136,45,1);
+	box-shadow: 0px 0px 25px 0px rgba(45,136,45,1);
+  }
+
+  .btn:hover {
+	background: #2d882d;
+	color: black;
+  }
+  
+  .upload-btn-wrapper input[type=file] {
+	font-size: 100px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	opacity: 0;
+  }
+
+  #Return_button {
+	margin: 20px;
+	border: 2px solid #2d882d;
+	color: black;
+	background-color: #2d882d;
+	padding: 8px 20px;
+	border-radius: 8px;
+	font-size: 20px;
+	-webkit-box-shadow: 10px 10px 38px 22px rgba(45,136,45,1);
+	-moz-box-shadow: 10px 10px 38px 22px rgba(45,136,45,1);
+	box-shadow: 0px 0px 25px 0px rgba(45,136,45,1);
+  }

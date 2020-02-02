@@ -58,6 +58,11 @@ const Login = () => {
 					<button className="Login_button" onClick={() => postLogin()}>
 						Connexion
 					</button>
+					<Link to="/signup">
+					<button className="Login_button">
+						S'inscrire
+					</button>
+					</Link>
 					<Link to="/main">
 						<button className="Login_button_skip">Passer</button>
 					</Link>

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { HashLink as SpaLink } from 'react-router-hash-link';
-import { Link } from "react-router-dom"
+import { Link } from 'react-router-dom';
 import { AuthContext } from './auth/Auth';
 import Logout from '../assets/logout.png';
 import './BurgerMenu.css';
@@ -12,6 +12,8 @@ const BurgerMenu = () => {
 	const [ displayBurger, setDisplayBurger ] = useState({
 		open: true
 	});
+
+	const isAdmin = dataUser && dataUser.userInfo && dataUser.userInfo.admin;
 
 	function displayAside() {
 		setDisplayBurger({ open: !displayBurger.open });
@@ -41,14 +43,15 @@ const BurgerMenu = () => {
 						<img alt="logout" className="BurgerMenu_logout" src={Logout} onClick={() => destroyToken()} />
 					</SpaLink>
 					<li className="BurgerMenu_user">
-						<Link to ="/profile">
-						<img alt="avatar"
-							className="BurgerMenu_user_img"
-							src={(dataUser && dataUser.userInfo && dataUser.userInfo.avatar) || defaultAvatar}
-						/>
+						<Link to="/profile">
+							<img
+								alt="avatar"
+								className="BurgerMenu_user_img"
+								src={(dataUser && dataUser.userInfo && dataUser.userInfo.avatar) || defaultAvatar}
+							/>
 						</Link>
 					</li>
-					
+
 					<li className="BurgerMenu_user">
 						<h3 className="BurgerMenu_user_name">
 							{(dataUser && dataUser.userInfo && dataUser.userInfo.pseudo) || 'Stranger'}
@@ -56,17 +59,24 @@ const BurgerMenu = () => {
 					</li>
 					<div className="BurgerMenu_navlink_container">
 						<SpaLink to="/main#Home_teleport">
-							<li className="BurgerMenu_navlink">Page d'accueil</li>
+							<li className="BurgerMenu_navlink" onClick={() => displayAside()}>Page d'accueil</li>
 						</SpaLink>
 						<SpaLink to="/main#Place_teleport">
-							<li className="BurgerMenu_navlink">Nos exploits</li>
+							<li className="BurgerMenu_navlink" onClick={() => displayAside()}>Nos exploits</li>
 						</SpaLink>
 						<SpaLink to="/main#Team_teleport">
-							<li className="BurgerMenu_navlink">Notre team</li>
+							<li className="BurgerMenu_navlink" onClick={() => displayAside()}>Notre team</li>
 						</SpaLink>
 						<SpaLink to="/main#History_teleport">
-							<li className="BurgerMenu_navlink">Notre histoire</li>
+							<li className="BurgerMenu_navlink" onClick={() => displayAside()}>Notre histoire</li>
 						</SpaLink>
+						{/* {isAdmin && (
+							<Link to="/Admin" onClick={() => this.closeMenu()}>
+								<li className="BurgerMenu_navlink">Gestion</li>
+							</Link> */}
+
+							{( isAdmin === 1 ) ? <Link to ="/admin"><li className="BurgerMenu_navlink">Panneau d'admin</li></Link> : null} 
+						)}
 					</div>
 				</ul>
 			</AuthContext.Provider>

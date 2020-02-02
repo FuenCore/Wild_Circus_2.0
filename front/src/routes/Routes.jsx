@@ -5,6 +5,7 @@ import Login from "../components/auth/Login";
 import { AuthContext }  from "../components/auth/Auth";
 import AdminMain from "../components/adminPanel/AdminMain";
 import Profile from "../components/Profile";
+import SignUp from "../components/auth/SignUp"
 
 const Routes = () => {
 
@@ -26,6 +27,7 @@ const Routes = () => {
                 <Route path="/Login" component={Login} />
                 <Route path="/Admin" component={AdminMain} />
                 <Route path="/profile" component={Profile} />
+                <Route path="/signup" component={SignUp} />
                 <Redirect to ="/Login"/>
                 </Switch>
         </Router>

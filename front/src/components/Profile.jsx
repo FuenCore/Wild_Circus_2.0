@@ -4,7 +4,7 @@ import './Profile.css';
 import { AuthContext } from './auth/Auth';
 import Axios from 'axios';
 import ProfileContext from './ProfileContext';
-import { Redirect } from 'react-router-dom';
+import { Redirect, Link } from 'react-router-dom';
 import BgGlitch from './BgGlitch';
 
 const Profile = () => {
@@ -78,6 +78,7 @@ const Profile = () => {
 				<div className="Profile_BgGlitch">
 					<BgGlitch title="Voici ta page perso" glitch="_________" />
 				</div>
+				<Link to="/Main"><button id="Return_button" type="submit" name="return">Retour</button></Link>
 				<div className="Profile_input_container">
 					<img alt="Profile_user_avatar" className="Profile_user_img" src={avatar.url || defaultAvatar} />
 					<div class="upload-btn-wrapper">

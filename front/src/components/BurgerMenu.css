@@ -30,7 +30,7 @@ box-shadow: -28px 24px 26px 0px rgba(0,0,0,0.75);
     border-radius: 50px;
     color: #2D882D;
     border: 2px solid #2D882D;
-    background: none;
+    background: black;
     font-size: 30px;
     position: absolute;
     z-index: 3;

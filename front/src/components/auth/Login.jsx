@@ -6,10 +6,9 @@ import { useAuth, AuthContext } from './Auth';
 import BgGlitch from '../BgGlitch';
 import './Login.css';
 
-const Login = (props) => {
+const Login = () => {
 	const userHook = React.useContext(AuthContext);
 	const [ isLoggedIn, setIsLoggedIn ] = useState(false);
-	const [ isError, setIsError ] = useState(false);
 	const [ username, setUsername ] = useState('');
 	const [ pass, setPass ] = useState('');
 	const { setAuthTokens } = useAuth();

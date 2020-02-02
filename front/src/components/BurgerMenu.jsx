@@ -8,7 +8,6 @@ import './BurgerMenu.css';
 const BurgerMenu = () => {
 	const dataUser = React.useContext(AuthContext);
 	const defaultAvatar = 'https://image.freepik.com/vector-gratis/payaso-aterrador-sombrero-rojo_43623-432.jpg';
-	const [ authTokens, setAuthTokens ] = useState();
 
 	const [ displayBurger, setDisplayBurger ] = useState({
 		open: true
@@ -39,11 +38,11 @@ const BurgerMenu = () => {
 				</button>
 				<ul id="BurgerMenu_menu">
 					<SpaLink to="/Login">
-						<img className="BurgerMenu_logout" src={Logout} onClick={() => destroyToken()} />
+						<img alt="logout" className="BurgerMenu_logout" src={Logout} onClick={() => destroyToken()} />
 					</SpaLink>
 					<li className="BurgerMenu_user">
 						<Link to ="/profile">
-						<img
+						<img alt="avatar"
 							className="BurgerMenu_user_img"
 							src={(dataUser && dataUser.userInfo && dataUser.userInfo.avatar) || defaultAvatar}
 						/>

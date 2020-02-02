@@ -59,13 +59,14 @@ const ArtistPage = () => {
 			<div className="ArtistPage_select_container">
 				<div className="ArtistPage_container_clowns">
 					<button className="ArtistPage_button" onClick={() => displayClownsOne()}>
+						{/* eslint-disable-next-line */}
 						🤡 LES BRAQUEURS
 					</button>
 
 					<div id="ClownOne" className="ArtistPage_artist_container">
 						{braqueur.map((x) => (
 							<div className="ArtistPage_artist">
-								<img className="ArtistPage_img" src={x.avatar} />
+								<img alt="clown_braqueur_img" className="ArtistPage_img" src={x.avatar} />
 								<div className="ArtistPage_info">
 									<p className="ArtistPage_name">
 										{x.pseudo}, {x.age} ans
@@ -80,12 +81,13 @@ const ArtistPage = () => {
 
 				<div className="ArtistPage_container_clowns">
 					<button className="ArtistPage_button" onClick={() => displayClownsTwo()}>
+						{/* eslint-disable-next-line */}
 						🤡 LES HACKERS
 					</button>
 					<div id="ClownTwo" className="ArtistPage_artist_container">
-					{hacker.map((x) => (
+						{hacker.map((x) => (
 							<div className="ArtistPage_artist">
-								<img className="ArtistPage_img" src={x.avatar} />
+								<img alt="clown_hacker_img" className="ArtistPage_img" src={x.avatar} />
 								<div className="ArtistPage_info">
 									<p className="ArtistPage_name">
 										{x.pseudo}, {x.age} ans
@@ -100,12 +102,13 @@ const ArtistPage = () => {
 
 				<div className="ArtistPage_container_clowns">
 					<button className="ArtistPage_button" onClick={() => displayClownsThree()}>
+						{/* eslint-disable-next-line */}
 						🤡 LES CLOWNS DE MAIN
 					</button>
 					<div id="ClownThree" className="ArtistPage_artist_container">
-					{soldier.map((x) => (
+						{soldier.map((x) => (
 							<div className="ArtistPage_artist">
-								<img className="ArtistPage_img" src={x.avatar} />
+								<img alt="clown_solider_img" className="ArtistPage_img" src={x.avatar} />
 								<div className="ArtistPage_info">
 									<p className="ArtistPage_name">
 										{x.pseudo}, {x.age} ans

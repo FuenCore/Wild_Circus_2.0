@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { storage } from '../firebase/Config';
 import './Profile.css';
-import { useAuth, AuthContext } from './auth/Auth';
+import { AuthContext } from './auth/Auth';
 import Axios from 'axios';
 import ProfileContext from './ProfileContext';
 import { Redirect } from 'react-router-dom';
@@ -73,13 +73,13 @@ const Profile = () => {
 		return <Redirect to="/Login" />;
 	}
 	return (
-		<ProfileContext.Provider value={{ dataProfile }}>
+		<ProfileContext.Provider value={{ dataProfile, setDataProfile }}>
 			<div className="Profile_container">
 				<div className="Profile_BgGlitch">
 					<BgGlitch title="Voici ta page perso" glitch="_________" />
 				</div>
 				<div className="Profile_input_container">
-					<img className="Profile_user_img" src={avatar.url || defaultAvatar} />
+					<img alt="Profile_user_avatar" className="Profile_user_img" src={avatar.url || defaultAvatar} />
 					<div class="upload-btn-wrapper">
 						<button class="btn">Modifier avatar</button>
 						<input

@@ -57,15 +57,15 @@ const HistoryPage = () => {
 				</p>
 					</div>
 					<div className="HistoryPage_img">
-						{slideCounter < 1 ? <img id="history_defaultpic" src={defaultPic} /> : null}
-						{slideCounter === 1 ? <img id="history_pic" src={history[0].image} /> : null}
-						{slideCounter === 2 ? <img id="history_pic" src={history[1].image} /> : null}
-						{slideCounter === 3 ? <img id="history_pic" src={history[2].image} /> : null}
-						{slideCounter === 4 ? <img id="history_pic" src={history[3].image} /> : null}
-						{slideCounter === 5 ? <img id="history_pic" src={history[4].image} /> : null}
-						{slideCounter === 6 ? <img id="history_pic" src={history[5].image} /> : null}
-						{slideCounter === 7 ? <img id="history_pic" src={history[6].image} /> : null}
-						{slideCounter > 7 ? <img id="history_defaultpic" src={defaultPic} /> : null}
+						{slideCounter < 1 ? <img alt="history_pic" id="history_defaultpic" src={defaultPic} /> : null}
+						{slideCounter === 1 ? <img alt="history_pic" id="history_pic" src={history[0].image} /> : null}
+						{slideCounter === 2 ? <img alt="history_pic" id="history_pic" src={history[1].image} /> : null}
+						{slideCounter === 3 ? <img alt="history_pic" id="history_pic" src={history[2].image} /> : null}
+						{slideCounter === 4 ? <img alt="history_pic" id="history_pic" src={history[3].image} /> : null}
+						{slideCounter === 5 ? <img alt="history_pic" id="history_pic" src={history[4].image} /> : null}
+						{slideCounter === 6 ? <img alt="history_pic" id="history_pic" src={history[5].image} /> : null}
+						{slideCounter === 7 ? <img alt="history_pic" id="history_pic" src={history[6].image} /> : null}
+						{slideCounter > 7 ? <img alt="history_pic" id="history_defaultpic" src={defaultPic} /> : null}
 					</div>
 				</div>
 			</div>

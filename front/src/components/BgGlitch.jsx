@@ -4,12 +4,12 @@ import './BgGlitch.css';
 const BgGlitch = (props) => {
 	return (
 		<div className="BgGlitch_container">
-			<div class="glitch" data-text={props.glitch || "H4CK_C1RCU5"}>
-			<div class="BgGLitch_color">{props.glitch || 'H4CK_C1RCU5'}</div>
-			<p class="BgGlitch_p">{props.title || "LE D4RKNET DES CL0WNS"}</p>	
+			<div className="glitch" data-text={props.glitch || "H4CK_C1RCU5"}>
+			<div className="BgGLitch_color">{props.glitch || 'H4CK_C1RCU5'}</div>
+			<p className="BgGlitch_p">{props.title || "LE D4RKNET DES CL0WNS"}</p>	
 			</div>
-			<div class="glow">HACK_CIRCUS</div>
-			<div class="scanlines" />
+			<div className="glow">HACK_CIRCUS</div>
+			<div className="scanlines" />
 		</div>
 	);
 };

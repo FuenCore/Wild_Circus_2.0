@@ -25,7 +25,7 @@ const AdminMain = () => {
 						<button className="AdminMain_button">Editer notre histoire</button>
 					</Link>
 					<Link to="/UserList">
-						<button className="AdminMain_button">Editer les utilisateurs</button>
+						<button className="AdminMain_button">Bannir des utilisateurs</button>
 					</Link>
 				</div>
 			</div>

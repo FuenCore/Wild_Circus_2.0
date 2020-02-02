@@ -1,0 +1,117 @@
+.AddPlace_container {
+        display: flex;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        overflow: auto
+}
+
+
+.AddPlace_box {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: auto auto;
+	border-radius: 20px;
+}
+
+.AddPlace_img {
+    width: 100px;
+    height: 100px;
+    border: #b10000 2px solid;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.AddPlace_li {
+    display: flex;
+    flex-direction: row;
+    border: #2B882B solid 2px;
+    background: black;
+    margin: 20px;
+    border-radius: 10px;
+    -webkit-box-shadow: 10px 10px 43px 22px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 43px 22px rgba(0,0,0,0.75);
+	box-shadow: 10px 10px 43px 22px rgba(0,0,0,0.75);
+}
+
+.AddPlace_ul {
+    margin: 10px;
+}
+
+.AddPlace_name, .AddPlace_place {
+    color: #2B882B;
+    text-align: left;
+    margin: 10px;
+}
+
+#AddPlace_button {
+    margin: 45px 10px 0 30px;
+    background: #b10000;
+    width: 100px;
+    height: 50px;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    border: 2px solid #b10000;
+    border-radius: 10px ;
+}
+
+#AddPlace_button_photo {
+    margin: 45px 10px 0 30px;
+    background: #2B882B;
+    width: 100px;
+    height: 50px;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    border: 2px solid #2B882B;
+    border-radius: 10px ;
+}
+
+.AddPlace_box2 {
+    margin: 50px;
+
+}
+
+.AddPlace_info_container {
+    margin: 15px auto 15px auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#AddPlace_button_image {
+    margin: 45px 5px 0 15px;
+
+}
+
+.AddPlace_name_1, .AddPlace_place_1 {
+    margin: 5px 20px;
+	min-width: 200px;
+	padding: 10px;
+	background: none;
+	border: 2px solid #2d882d;
+	border-radius: 10px;
+	color: #f0efef;
+    font-size: 20px;
+    -webkit-box-shadow: 10px 10px 38px 22px rgba(45,136,45,1);
+    -moz-box-shadow: 10px 10px 38px 22px rgba(45,136,45,1);
+    box-shadow: 0px 0px 5px 0px rgba(45,136,45,1);
+}
+
+.AddPlace_submit_btn {
+    margin: 30px auto;
+	height: 50px;
+	padding: 10px;
+	background: #2d882d;
+	border: 2px solid #2d882d;
+	border-radius: 10px;
+	color: black;
+	font-size: 20px;
+	transition: 0.5s;
+    -webkit-box-shadow: 10px 10px 43px 22px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 43px 22px rgba(0,0,0,0.75);
+	box-shadow: 10px 10px 43px 22px rgba(0,0,0,0.75);
+	font-weight: bold;
+}

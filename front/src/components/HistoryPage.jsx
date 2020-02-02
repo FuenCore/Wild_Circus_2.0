@@ -8,7 +8,7 @@ const HistoryPage = () => {
 		'https://www.gannett-cdn.com/-mm-/e1d78d18d18c0e71d5c7c4a0350b598687f50fe1/c=0-50-534-352/local/-/media/2016/10/28/Treasure%20Coast/TreasureCoast/636132784773010126-creepy-clown.jpg?width=1600&height=800&fit=crop';
 	const defaultDate = '???';
 	const defaultPlace = '???';
-	const defaultText = 'Oui';
+	const defaultText = `Que ce passe t-il si tu appuies sur le bouton ?`;
 
 	const [ slideCounter, setSlideCounter ] = useState(0);
 

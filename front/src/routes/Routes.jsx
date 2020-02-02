@@ -26,6 +26,7 @@ const Routes = () => {
                 <Route path="/Login" component={Login} />
                 <Route path="/Admin" component={AdminMain} />
                 <Route path="/profile" component={Profile} />
+                <Redirect to ="/Login"/>
                 </Switch>
         </Router>
         </AuthContext.Provider>

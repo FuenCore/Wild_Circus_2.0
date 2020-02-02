@@ -2,3 +2,11 @@
 .env
 ## Marche pas non plus
 /node_modules
+## firebase config
+/firebase/*
+.firebase/
+firebase/
+*/.env
+*.env
+.config.js
+/config.js

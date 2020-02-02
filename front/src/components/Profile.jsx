@@ -39,22 +39,24 @@ const Profile = () => {
 						{
 							avatar: url
 						}
-					).then(setIsSubmit(true));
+					).then(	userHook.setUserInfo(null))
+					.then(setIsSubmit(true));
 				});
 			}
 		);
 	};
 
-	// const whatMustBeSend = () => {
-	// 	avatar.name && avatar.url === null ? submitProfile() : submitAvatar();
-	// 	submitProfile();
-	// };
+	const whatMustBeSend = () => {
+		avatar.name && avatar.url === null ? submitProfile() : submitAvatar();
+		submitProfile();
+	};
 
 	const dataUser = React.useContext(AuthContext);
 	const defaultAvatar =
 		(dataUser && dataUser.userInfo && dataUser.userInfo.avatar) ||
 		'https://image.freepik.com/vector-gratis/payaso-aterrador-sombrero-rojo_43623-432.jpg';
 
+	const userHook = React.useContext(AuthContext);
 	const [ dataProfile, setDataProfile ] = useState();
 	const [ firstname, setFirstname ] = useState('');
 	const [ lastname, setLastName ] = useState('');
@@ -117,7 +119,7 @@ const Profile = () => {
 					/>
 
 					<div className="Profile_container_button">
-						<button className="Profile_button" onClick={() => submitAvatar()}>
+						<button className="Profile_button" onClick={() => whatMustBeSend()}>
 							Enregistrer
 						</button>
 					</div>

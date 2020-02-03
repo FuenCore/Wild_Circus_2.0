@@ -46,4 +46,27 @@ router.get("/soldier", (req, res) => {
   });
 });
 
+router.post('/', (req, res) => {
+  const formData = req.body;
+  connection.query("INSERT INTO clown SET ?", [formData], (err, results) => {
+    if(err) {
+      res.status(500).send(err)
+    } else {
+      res.json(results)
+    }
+  })
+})
+
+router.delete('/:id', (req,res) => {
+  const idUrl = req.params.id
+  connection.query("DELETE FROM clown WHERE id = ?", [ idUrl ], (err) => {
+    if(err){
+      res.status(500).send(err)
+    }
+    else {
+      res.status(200)
+    }
+  })
+})
+
 module.exports = router;

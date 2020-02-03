@@ -14,6 +14,8 @@ router.get("/", (req, res) => {
   });
 });
 
+
+
 router.put('/update/:id', (req, res) => {
   const idUrl = req.params.id;
   const { password, ...formData} = req.body;
@@ -36,6 +38,18 @@ router.put('/update/:id', (req, res) => {
   })
 }
 });
+
+router.delete('/:id', (req,res) => {
+  const idUrl = req.params.id
+  connection.query("DELETE FROM user WHERE id = ?", [ idUrl ], (err) => {
+    if(err){
+      res.status(500).send(err)
+    }
+    else {
+      res.status(200)
+    }
+  })
+})
 
 
 

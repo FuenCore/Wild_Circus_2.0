@@ -8,5 +8,6 @@
 firebase/
 */.env
 *.env
+.env
 .config.js
 /config.js

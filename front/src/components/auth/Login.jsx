@@ -38,7 +38,7 @@ const Login = () => {
 			</div>	
 			<div className="Login_input_container">
 			<div className="Login_container_title">
-				<h3 className="Login_title">C0NNECTE-T0I !</h3>
+				<h3 className="Login_title">C0NNECTES-T0I !</h3>
 			</div>	
 				<input
 					name="username"

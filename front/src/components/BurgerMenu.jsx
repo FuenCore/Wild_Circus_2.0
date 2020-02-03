@@ -58,6 +58,8 @@ const BurgerMenu = () => {
 						</h3>
 					</li>
 					<div className="BurgerMenu_navlink_container">
+					<Link to="/chat"><li className="BurgerMenu_chat">Chat</li></Link>
+
 						<SpaLink to="/main#Home_teleport">
 							<li className="BurgerMenu_navlink" onClick={() => displayAside()}>Page d'accueil</li>
 						</SpaLink>
@@ -70,13 +72,7 @@ const BurgerMenu = () => {
 						<SpaLink to="/main#History_teleport">
 							<li className="BurgerMenu_navlink" onClick={() => displayAside()}>Notre histoire</li>
 						</SpaLink>
-						{/* {isAdmin && (
-							<Link to="/Admin" onClick={() => this.closeMenu()}>
-								<li className="BurgerMenu_navlink">Gestion</li>
-							</Link> */}
-
-							{( isAdmin === 1 ) ? <Link to ="/admin"><li className="BurgerMenu_navlink">Panneau d'admin</li></Link> : null} 
-						
+						{( isAdmin === 1 ) ? <Link to ="/admin"><li className="BurgerMenu_navlink">Panneau d'admin</li></Link> : null} 	
 					</div>
 				</ul>
 			</AuthContext.Provider>

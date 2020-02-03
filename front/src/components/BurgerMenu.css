@@ -98,3 +98,17 @@ box-shadow: -28px 24px 26px 0px rgba(0,0,0,0.75);
     transition: 2s;
 
 }
+
+.BurgerMenu_chat {
+    padding: 2vh 0 2vh 0;
+    color: #C4161D;
+    list-style-type: none;
+    width: 100%;
+    transition-duration: 0,5s;
+    margin: 0px auto;
+}
+
+.BurgerMenu_chat:hover{
+    color: black;
+    background-color: #C4161D;
+}

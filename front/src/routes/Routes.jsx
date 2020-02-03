@@ -10,6 +10,7 @@ import AddPlace from "../components/adminPanel/AddPlace";
 import UserList from "../components/adminPanel/UserList";
 import Profile from "../components/Profile";
 import SignUp from "../components/auth/SignUp"
+import ChatPage from "../components/ChatPage";
 
 const Routes = () => {
 
@@ -36,6 +37,7 @@ const Routes = () => {
                 <Route path="/UserList" component={UserList}/>
                 <Route path="/profile" component={Profile} />
                 <Route path="/signup" component={SignUp} />
+                <Route path="/chat" component={ChatPage} />
                 <Redirect to ="/Login"/>
                 </Switch>
         </Router>

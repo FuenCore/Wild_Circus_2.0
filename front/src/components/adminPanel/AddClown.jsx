@@ -78,6 +78,7 @@ const AddClown = () => {
 					<li className="AddClown_li">
 						<div className="AddClown_info_container">
 						<select id="AddClown_select" onChange={(e) => setNewRole(e.target.value)}>
+								<option id='AddClown_option'>Choisir le rôle</option>
 								<option value="Braqueur" id='AddClown_option'>Braqueur</option>
 								<option value="Hackeur" id='AddClown_option'>Hackeur</option>
 								<option value="Clown de main" id='AddClown_option' value="Clown de main" >Clown de main</option>
